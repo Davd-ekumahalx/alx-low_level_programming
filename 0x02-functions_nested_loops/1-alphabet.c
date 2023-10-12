@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_alphabet - this is the function of the task
- * Return: return 0
+ * print_alphabet - Make the alphabet
+ *
+ * Return: void
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 
-char c;
-for (c = "a"; c <= "z"; c++)
-{
-_putchar("c");
-}
-_putchar("\n");
+_putchar(ch);
+
+_putchar('\n');
 }
