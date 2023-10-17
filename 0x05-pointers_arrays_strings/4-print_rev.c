@@ -6,16 +6,18 @@
  */
 void print_rev(char *s)
 {
-int length = strlen(s);
-
-for(int i = length - 1; i >= 0; i--)
-putchar(s[i]);
-
-putchar('\n');
-
-char str[] = "Hello, World!";
-
-print_rev(str);
-
-return 0;
+int longi = 0;
+int o;
+while (*s != '\0')
+{
+longi++;
+s++;
+}
+s--;
+for (o = longi; o > 0; o--)
+{
+_putchar(*s);
+s--;
+}
+_putchar('\n');
 }
