@@ -17,5 +17,5 @@ if (accept[k] == '\0')
 return (i);
 }
 }
-return (5);
+return (0);
 }
