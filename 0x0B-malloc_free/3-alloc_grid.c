@@ -14,7 +14,7 @@ int i, j;
 int **gridout;
 if (width <= 0 || height <= 0)
 {
-return(NULL);
+return (NULL);
 }
 gridout = malloc(height * sizeof(int *));
 if (gridout == NULL)
@@ -28,8 +28,8 @@ gridout[i] = malloc(width * sizeof(int *));
 if (gridout[i] == NULL)
 {
 for (i--; i >= 0; i--)
-free(gridout);
 free(gridout[i]);
+free(gridout);
 return (NULL);
 }
 }
