@@ -12,7 +12,7 @@ if (new_node == NULL)
 return (NULL);
 new_node->n = n;
 new_node->next = NULL;
-return (NULL);
+return (new_node);
 }
 /**
 * insert_nodeint_at_index - insert a node at an index in a list
