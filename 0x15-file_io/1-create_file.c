@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * create_file - create and write into a file
- * and copy constant in it
+ * create_file - create and write into a file and copy constant in it
  * @filename: the filename to be created
- * @text_constant: the content to be copied into the file
+ * @text_content: the to be copied into the file
  * Return: 1 if sucessful 0r -1 if failed
  */
 int create_file(const char *filename, char *text_content)
@@ -22,7 +21,10 @@ for (nletters = 0; text_content[nletters]; nletters++)
 ;
 rwr = write(fd, text_content, nletters);
 if (rwr == -1)
+
 return (-1);
+
 close(fd);
+
 return (1);
 }
